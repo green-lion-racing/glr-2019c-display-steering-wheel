@@ -29,6 +29,7 @@ Application/User/Core/freertos.o: \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+ C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma2d.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
@@ -106,6 +107,8 @@ C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h:
 
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h:
+
+C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h:
 
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h:
 

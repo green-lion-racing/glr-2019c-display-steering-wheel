@@ -9,7 +9,6 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
 
@@ -20,7 +19,6 @@ public:
     virtual ~Screen1ViewBase() {}
 
     virtual void setupScreen();
-    virtual void handleKeyEvent(uint8_t key);
 
 protected:
     FrontendApplication& application() {
@@ -33,10 +31,6 @@ protected:
     touchgfx::Box box1;
     touchgfx::Box box2;
     touchgfx::TextAreaWithOneWildcard textArea1;
-    touchgfx::TextArea textArea2;
-    touchgfx::TextArea textArea3;
-    touchgfx::TextArea textArea4;
-    touchgfx::TextArea textArea5;
     touchgfx::TextAreaWithOneWildcard textAreaGear;
     touchgfx::Image image1;
     touchgfx::Button button1;
@@ -50,6 +44,16 @@ protected:
     touchgfx::Unicode::UnicodeChar textAreaGearBuffer[TEXTAREAGEAR_SIZE];
 
 private:
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
 };
 

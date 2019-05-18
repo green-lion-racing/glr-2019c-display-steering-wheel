@@ -1,5 +1,5 @@
-Application/User/TouchGFX/target/STM32F4Instrumentation.o: \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/TouchGFX/target/STM32F4Instrumentation.cpp \
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_can.o: \
+ C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Core/Inc/stm32f4xx_hal_conf.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -37,26 +37,7 @@ Application/User/TouchGFX/target/STM32F4Instrumentation.o: \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Types.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Config.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BlitOp.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Event.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/DragEvent.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/UIEventListener.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/DMA.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Atomic.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Unicode.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/TouchGFX/target/STM32F4Instrumentation.hpp \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Core/Inc/main.h \
- C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/BSP/Components/otm8009a/otm8009a.h
+ C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h
 
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 
@@ -133,41 +114,3 @@ C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h:
 
 C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Types.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Config.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BlitOp.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Event.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/DragEvent.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/UIEventListener.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/DMA.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Atomic.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Unicode.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/touch/TouchController.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/button/ButtonController.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/TouchGFX/target/STM32F4Instrumentation.hpp:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Core/Inc/main.h:
-
-C:/Users/Tobias/Documents/WorkspaceSystemWorkbench/STM32F469_TouchGFX_v2/Drivers/BSP/Components/otm8009a/otm8009a.h:
