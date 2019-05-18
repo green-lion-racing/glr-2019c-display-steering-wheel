@@ -1,0 +1,342 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 245,
+              "Green": 83,
+              "Blue": 19
+            },
+            "Alpha": 255,
+            "Name": "box2",
+            "X": 201,
+            "Y": 0,
+            "Width": 158,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId1",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId6",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "textArea1",
+            "X": 216,
+            "Y": 144,
+            "Width": 128,
+            "Height": 192,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId2",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea2",
+            "X": 773,
+            "Y": 0,
+            "Width": 27,
+            "Height": 128,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId3",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea3",
+            "X": 0,
+            "Y": 372,
+            "Width": 29,
+            "Height": 108,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId4",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea4",
+            "X": 773,
+            "Y": 363,
+            "Width": 27,
+            "Height": 117,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId5",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea5",
+            "X": 387,
+            "Y": 210,
+            "Width": 26,
+            "Height": 60,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId7",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId8",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "textAreaGear",
+            "X": 0,
+            "Y": 13,
+            "Width": 128,
+            "Height": 75,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "screwdriver_icon-icons.com_65041.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 519,
+            "Y": 200,
+            "Width": 48,
+            "Height": 48,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button1",
+            "X": 479,
+            "Y": 350,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen2",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 89,
+              "Green": 214,
+              "Blue": 14
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Screen2",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx/",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "1.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        16
+      ],
+      "AvailableImageFormats": {
+        "16": {
+          "Opaque": "RGB565",
+          "NonOpaque": "ARGB8888"
+        }
+      },
+      "AvailableResolutions": [],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=..\\SW4STM32\\STM32F469_TouchGFX_v2\\.project  --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "",
+      "FlashTargetCommand": ""
+    }
+  },
+  "Version": "4.10.0"
+}
