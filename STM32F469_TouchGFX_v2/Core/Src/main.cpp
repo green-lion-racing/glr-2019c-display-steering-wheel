@@ -54,7 +54,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <gui/screen1_screen/Screen1View.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -605,13 +605,28 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
 	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {}
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	if (changeBackground == 0)
+		changeBackground = 1;
+	else
+		changeBackground = 0;
 	//HAL_GPIO_TogglePin(LED_Green_GPIO_Port, LED_Green_Pin);
 	//HAL_Delay(500);
 	//if(RxHeader.StdId == 0x773) {
 	//	if(RxData[5]>=25) HAL_GPIO_WritePin(LED_Green_GPIO_Port,LED_Green_Pin,1);
 	//	else HAL_GPIO_WritePin(LED_Green_GPIO_Port,LED_Green_Pin,0);
 	//	}
-
+	switch(RxHeader.StdId){
+	case 0x773:
+		rpmTest = (RxData[3]<<8|RxData[4])*32767.5/65535;
+	break;
+	case 0x77A:
+		switch(RxData[0]){
+		case 1:
+			pFuel = (RxData[7]);//*13.107/255);
+		break;
+		}
+	break;
+	}
 }
 
 void JDO_SendCan(void)

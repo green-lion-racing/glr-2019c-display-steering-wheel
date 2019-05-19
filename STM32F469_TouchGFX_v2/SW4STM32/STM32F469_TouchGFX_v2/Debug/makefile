@@ -65,7 +65,7 @@ all: STM32F469_TouchGFX_v2.elf
 STM32F469_TouchGFX_v2.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU G++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\Users\Tobias\Documents\WorkspaceSystemWorkbench\STM32F469_TouchGFX_v2\Middlewares\ST\TouchGFX\touchgfx\lib\core\cortex_m4f\gcc"  -specs=nosys.specs -specs=nano.specs -T"../STM32F469NIHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "STM32F469_TouchGFX_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\Users\Tobias\Documents\Git\GLR\glr-2019c-display-steering-wheel\STM32F469_TouchGFX_v2\Middlewares\ST\TouchGFX\touchgfx\lib\core\cortex_m4f\gcc"  -specs=nosys.specs -specs=nano.specs -T"../STM32F469NIHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "STM32F469_TouchGFX_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

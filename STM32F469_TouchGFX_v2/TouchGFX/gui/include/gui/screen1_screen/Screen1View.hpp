@@ -14,9 +14,13 @@ public:
     //virtual void rpmChanged();
     virtual void setRpm(int);
     virtual void handleTickEvent();
-
     int tickCounter;
+
 protected:
 };
-
+//------Test-----------------
+extern int changeBackground;
+extern unsigned int rpmTest;
+extern unsigned int pFuel;
+//---------------------------
 #endif // SCREEN1_VIEW_HPP

@@ -58,10 +58,10 @@
               "BufferSize": 20
             },
             "Name": "textArea1",
-            "X": 216,
-            "Y": 144,
-            "Width": 128,
-            "Height": 192,
+            "X": 217,
+            "Y": 18,
+            "Width": 127,
+            "Height": 434,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -87,7 +87,7 @@
             },
             "Name": "textAreaGear",
             "X": 0,
-            "Y": 13,
+            "Y": 16,
             "Width": 128,
             "Height": 75,
             "Type": "TextArea",
@@ -123,6 +123,184 @@
             "Width": 170,
             "Height": 60,
             "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId9",
+            "TextRotation": "270",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId10",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "textAreaFuel",
+            "X": 649,
+            "Y": 18,
+            "Width": 128,
+            "Height": 146,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1",
+            "X": 140,
+            "Y": 395,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_1",
+            "X": 140,
+            "Y": 315,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_2",
+            "X": 140,
+            "Y": 235,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_3",
+            "X": 140,
+            "Y": 155,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_4",
+            "X": 140,
+            "Y": 79,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 6,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_5",
+            "X": 140,
+            "Y": 0,
+            "Width": 61,
+            "Height": 85,
+            "Type": "BoxWithBorder",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -193,6 +371,14 @@
       },
       {
         "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
         "IsResource": false
       }
     ],
