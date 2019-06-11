@@ -57,8 +57,6 @@ Application/User/TouchGFX/target/BoardConfiguration.o: \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
@@ -227,10 +225,6 @@ C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_Tou
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 

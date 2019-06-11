@@ -108,8 +108,6 @@ Application/User/Core/main.o: \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Core/Inc/main.h:
@@ -327,9 +325,5 @@ C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_Tou
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp:
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:

@@ -32,7 +32,6 @@ Application/User/TouchGFX/generated/gui_generated/common \
 Application/User/TouchGFX/generated/gui_generated/screen1_screen \
 Application/User/TouchGFX/generated/gui_generated/screen2_screen \
 Application/User/TouchGFX/generated/images \
-Application/User/TouchGFX/generated/images/__designer \
 Application/User/TouchGFX/generated/texts \
 Application/User/TouchGFX/gui/common \
 Application/User/TouchGFX/gui/model \

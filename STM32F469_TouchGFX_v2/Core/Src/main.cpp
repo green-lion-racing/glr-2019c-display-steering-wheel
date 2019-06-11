@@ -82,6 +82,7 @@ QSPI_HandleTypeDef hqspi;
 SAI_HandleTypeDef hsai_BlockA1;
 
 osThreadId defaultTaskHandle;
+osThreadId shiftingHandle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -97,9 +98,13 @@ extern void GRAPHICS_Init(void);
 extern void GRAPHICS_MainTask(void);
 static void MX_CAN1_Init(void);
 void StartDefaultTask(void const * argument);
+void StartTaskShifting(void const * argument);
 
 /* USER CODE BEGIN PFP */
 void JDO_CanInit(void);
+void gearUp(void);
+void gearDown(void);
+void greenLight(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -145,7 +150,7 @@ int main(void)
   MX_SAI1_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-  JDO_CanInit();
+
   /* USER CODE END 2 */
 
 /* Initialise the graphical hardware */
@@ -172,6 +177,10 @@ int main(void)
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* definition and creation of shifting */
+  osThreadDef(shifting, StartTaskShifting, osPriorityAboveNormal, 0, 128);
+  shiftingHandle = osThreadCreate(osThread(shifting), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -437,7 +446,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOG, paddleShiftGND_Pin|LED1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, OTG_FS1_PowerSwitchOn_Pin|EXT_RESET_Pin, GPIO_PIN_RESET);
@@ -455,12 +464,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ARDUINO_USART6_TX_Pin USART6_RX_Pin */
-  GPIO_InitStruct.Pin = ARDUINO_USART6_TX_Pin|USART6_RX_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF8_USART6;
+  /*Configure GPIO pins : paddleShiftDown_Pin paddleShiftUp_Pin */
+  GPIO_InitStruct.Pin = paddleShiftDown_Pin|paddleShiftUp_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
   /*Configure GPIO pin : I2S3_CK_Pin */
@@ -514,6 +521,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED4_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : paddleShiftGND_Pin */
+  GPIO_InitStruct.Pin = paddleShiftGND_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(paddleShiftGND_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : uSD_CMD_Pin */
   GPIO_InitStruct.Pin = uSD_CMD_Pin;
@@ -605,10 +619,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
 	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {}
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
-	if (changeBackground == 0)
-		changeBackground = 1;
-	else
-		changeBackground = 0;
 	//HAL_GPIO_TogglePin(LED_Green_GPIO_Port, LED_Green_Pin);
 	//HAL_Delay(500);
 	//if(RxHeader.StdId == 0x773) {
@@ -622,21 +632,55 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 	case 0x77A:
 		switch(RxData[0]){
 		case 1:
-			pFuel = (RxData[7]);//*13.107/255);
+			pFuel = RxData[7]*13.107/255;
+			pOil = RxData[5]*13.107/255;
 		break;
+		case 4:
+			//tOil = RxData[5]-40;
+		break;
+		case 5:
+			tWat = RxData[4]-40;
 		}
 	break;
 	}
 }
 
-void JDO_SendCan(void)
+void gearUp(void)
 {
+	TxHeader.StdId=0x101;
+	//TxHeader.ExtId=0x101;
+	TxHeader.RTR=CAN_RTR_DATA;
+	TxHeader.IDE=CAN_ID_STD;
+	TxHeader.DLC=1;
+	TxHeader.TransmitGlobalTime=DISABLE;
+	TxData[0]=1<<GearUp;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
-	//HAL_Delay(500);
-	TxData[7]=TxData[7]+1;
- //   HAL_GPIO_WritePin(LED_Green_GPIO_Port, LED_Green_Pin, GPIO_PIN_SET); //Geaenderte Zeile
-
 }
+
+void gearDown(void)
+{
+	TxHeader.StdId=0x101;
+	//TxHeader.ExtId=0x101;
+	TxHeader.RTR=CAN_RTR_DATA;
+	TxHeader.IDE=CAN_ID_STD;
+	TxHeader.DLC=1;
+	TxHeader.TransmitGlobalTime=DISABLE;
+	TxData[0]=1<<GearDown;
+	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+}
+
+void greenLight(void)
+{
+	TxHeader.StdId=0x101;
+	//TxHeader.ExtId=0x101;
+	TxHeader.RTR=CAN_RTR_DATA;
+	TxHeader.IDE=CAN_ID_STD;
+	TxHeader.DLC=1;
+	TxHeader.TransmitGlobalTime=DISABLE;
+	TxData[0]=1<<GreenLight;
+	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+}
+
 
 void JDO_CanInit(void)
 {
@@ -665,21 +709,6 @@ void JDO_CanInit(void)
 	{/* Notification Error */
 	  Error_Handler();
 	}
-
-	TxHeader.StdId=0x321;
-	TxHeader.ExtId=0x01;
-	TxHeader.RTR=CAN_RTR_DATA;
-	TxHeader.IDE=CAN_ID_STD;
-	TxHeader.DLC=8;
-	TxHeader.TransmitGlobalTime=DISABLE;
-	TxData[0]=1;
-	TxData[1]=2;
-	TxData[2]=3;
-	TxData[3]=4;
-	TxData[4]=5;
-	TxData[5]=6;
-	TxData[6]=7;
-	TxData[7]=8;
 }
 /* USER CODE END 4 */
 
@@ -703,6 +732,35 @@ void StartDefaultTask(void const * argument)
     osDelay(1);
   }
   /* USER CODE END 5 */ 
+}
+
+/* USER CODE BEGIN Header_StartTaskShifting */
+/**
+* @brief Function implementing the shifting thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTaskShifting */
+void StartTaskShifting(void const * argument)
+{
+  /* USER CODE BEGIN StartTaskShifting */
+  /* Infinite loop */
+	//tOil = HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin);
+	//tOil = HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin);
+	for(;;)
+	{
+		osDelay(500);
+		if (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
+			gearDown();
+		else
+			greenLight();
+
+		if (HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin))
+			gearUp();
+		else
+			greenLight();
+  }
+  /* USER CODE END StartTaskShifting */
 }
 
 /**

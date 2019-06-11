@@ -6,8 +6,7 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include "BitmapDatabase.hpp"
 
-Screen1ViewBase::Screen1ViewBase() :
-    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
+Screen1ViewBase::Screen1ViewBase()
 {
     box1.setPosition(0, 0, 800, 480);
     box1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
@@ -34,10 +33,6 @@ Screen1ViewBase::Screen1ViewBase() :
     image1.setXY(519, 200);
     image1.setBitmap(Bitmap(BITMAP_SCREWDRIVER_ICON_ICONS_COM_65041_ID));
 
-    button1.setXY(479, 350);
-    button1.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    button1.setAction(buttonCallback);
-
     textAreaFuel.setPosition(649, 18, 128, 146);
     textAreaFuel.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textAreaFuel.setLinespacing(0);
@@ -46,63 +41,99 @@ Screen1ViewBase::Screen1ViewBase() :
     textAreaFuel.setWildcard(textAreaFuelBuffer);
     textAreaFuel.setTypedText(TypedText(T_SINGLEUSEID9));
 
-    boxWithBorder1.setPosition(140, 395, 61, 85);
-    boxWithBorder1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1.setBorderSize(6);
+    rpm0.setPosition(140, 395, 61, 85);
+    rpm0.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm0.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm0.setBorderSize(6);
 
-    boxWithBorder1_1.setPosition(140, 315, 61, 85);
-    boxWithBorder1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1_1.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1_1.setBorderSize(6);
+    rpm1.setPosition(140, 315, 61, 85);
+    rpm1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm1.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm1.setBorderSize(6);
 
-    boxWithBorder1_2.setPosition(140, 235, 61, 85);
-    boxWithBorder1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1_2.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1_2.setBorderSize(6);
+    rpm2.setPosition(140, 235, 61, 85);
+    rpm2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm2.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm2.setBorderSize(6);
 
-    boxWithBorder1_3.setPosition(140, 155, 61, 85);
-    boxWithBorder1_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1_3.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1_3.setBorderSize(6);
+    rpm3.setPosition(140, 155, 61, 85);
+    rpm3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm3.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm3.setBorderSize(6);
 
-    boxWithBorder1_4.setPosition(140, 79, 61, 85);
-    boxWithBorder1_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1_4.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1_4.setBorderSize(6);
+    rpm4.setPosition(140, 79, 61, 85);
+    rpm4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm4.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm4.setBorderSize(6);
 
-    boxWithBorder1_5.setPosition(140, 0, 61, 85);
-    boxWithBorder1_5.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    boxWithBorder1_5.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    boxWithBorder1_5.setBorderSize(6);
+    rpm5.setPosition(140, 0, 61, 85);
+    rpm5.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    rpm5.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    rpm5.setBorderSize(6);
+
+    textAreaPOil.setPosition(676, 315, 101, 146);
+    textAreaPOil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textAreaPOil.setLinespacing(0);
+    textAreaPOil.setRotation(TEXT_ROTATE_270);
+    Unicode::snprintf(textAreaPOilBuffer, TEXTAREAPOIL_SIZE, "%s", TypedText(T_SINGLEUSEID12).getText());
+    textAreaPOil.setWildcard(textAreaPOilBuffer);
+    textAreaPOil.setTypedText(TypedText(T_SINGLEUSEID11));
+
+    textAreaTOil.setPosition(543, 315, 104, 146);
+    textAreaTOil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textAreaTOil.setLinespacing(0);
+    textAreaTOil.setRotation(TEXT_ROTATE_270);
+    Unicode::snprintf(textAreaTOilBuffer, TEXTAREATOIL_SIZE, "%s", TypedText(T_SINGLEUSEID14).getText());
+    textAreaTOil.setWildcard(textAreaTOilBuffer);
+    textAreaTOil.setTypedText(TypedText(T_SINGLEUSEID13));
+
+    textAreaTWat.setPosition(418, 315, 101, 146);
+    textAreaTWat.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textAreaTWat.setLinespacing(0);
+    textAreaTWat.setRotation(TEXT_ROTATE_270);
+    Unicode::snprintf(textAreaTWatBuffer, TEXTAREATWAT_SIZE, "%s", TypedText(T_SINGLEUSEID16).getText());
+    textAreaTWat.setWildcard(textAreaTWatBuffer);
+    textAreaTWat.setTypedText(TypedText(T_SINGLEUSEID15));
+
+    textArea2.setPosition(651, 323, 29, 50);
+    textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    textArea2.setRotation(TEXT_ROTATE_270);
+    textArea2.setTypedText(TypedText(T_SINGLEUSEID17));
+
+    textArea2_1.setPosition(525, 320, 24, 50);
+    textArea2_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1.setLinespacing(0);
+    textArea2_1.setRotation(TEXT_ROTATE_270);
+    textArea2_1.setTypedText(TypedText(T_SINGLEUSEID18));
+
+    textArea2_2.setPosition(400, 320, 23, 53);
+    textArea2_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_2.setLinespacing(0);
+    textArea2_2.setRotation(TEXT_ROTATE_270);
+    textArea2_2.setTypedText(TypedText(T_SINGLEUSEID19));
 
     add(box1);
     add(box2);
     add(textArea1);
     add(textAreaGear);
     add(image1);
-    add(button1);
     add(textAreaFuel);
-    add(boxWithBorder1);
-    add(boxWithBorder1_1);
-    add(boxWithBorder1_2);
-    add(boxWithBorder1_3);
-    add(boxWithBorder1_4);
-    add(boxWithBorder1_5);
+    add(rpm0);
+    add(rpm1);
+    add(rpm2);
+    add(rpm3);
+    add(rpm4);
+    add(rpm5);
+    add(textAreaPOil);
+    add(textAreaTOil);
+    add(textAreaTWat);
+    add(textArea2);
+    add(textArea2_1);
+    add(textArea2_2);
 }
 
 void Screen1ViewBase::setupScreen()
 {
 
-}
-
-void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &button1)
-    {
-        //Interaction1
-        //When button1 clicked change screen to Screen2
-        //Go to Screen2 with no screen transition
-        application().gotoScreen2ScreenNoTransition();
-    }
 }

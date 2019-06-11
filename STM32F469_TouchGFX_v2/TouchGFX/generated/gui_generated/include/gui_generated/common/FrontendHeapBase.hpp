@@ -8,8 +8,6 @@
 #include <common/Partition.hpp>
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
-
-
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 

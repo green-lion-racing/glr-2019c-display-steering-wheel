@@ -53,8 +53,6 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Image.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/BoxWithBorder.hpp \
  gui/include/gui/screen2_screen/Screen2View.hpp \
  generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
@@ -168,10 +166,6 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Image.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Button.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 
