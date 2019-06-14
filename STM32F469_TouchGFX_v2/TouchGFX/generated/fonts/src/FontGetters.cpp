@@ -6,6 +6,18 @@
 using namespace touchgfx;
 #endif
 
+// consola_100_4bpp
+extern const touchgfx::GlyphNode glyphs_consola_100_4bpp[];
+extern const uint8_t unicodes_consola_100_4bpp[];
+extern const touchgfx::KerningNode kerning_consola_100_4bpp[];
+touchgfx::InternalFlashFont& getFont_consola_100_4bpp();
+
+touchgfx::InternalFlashFont& getFont_consola_100_4bpp()
+{
+    static touchgfx::InternalFlashFont consola_100_4bpp(glyphs_consola_100_4bpp, 95, 100, 21, 4, 0, 0, unicodes_consola_100_4bpp, kerning_consola_100_4bpp, 63, 0);
+    return consola_100_4bpp;
+}
+
 // verdana_10_4bpp
 extern const touchgfx::GlyphNode glyphs_verdana_10_4bpp[];
 extern const uint8_t unicodes_verdana_10_4bpp[];
@@ -40,17 +52,5 @@ touchgfx::InternalFlashFont& getFont_verdana_40_4bpp()
 {
     static touchgfx::InternalFlashFont verdana_40_4bpp(glyphs_verdana_40_4bpp, 12, 40, 8, 4, 0, 0, unicodes_verdana_40_4bpp, kerning_verdana_40_4bpp, 0, 0);
     return verdana_40_4bpp;
-}
-
-// verdana_100_4bpp
-extern const touchgfx::GlyphNode glyphs_verdana_100_4bpp[];
-extern const uint8_t unicodes_verdana_100_4bpp[];
-extern const touchgfx::KerningNode kerning_verdana_100_4bpp[];
-touchgfx::InternalFlashFont& getFont_verdana_100_4bpp();
-
-touchgfx::InternalFlashFont& getFont_verdana_100_4bpp()
-{
-    static touchgfx::InternalFlashFont verdana_100_4bpp(glyphs_verdana_100_4bpp, 13, 100, 18, 4, 0, 0, unicodes_verdana_100_4bpp, kerning_verdana_100_4bpp, 63, 0);
-    return verdana_100_4bpp;
 }
 

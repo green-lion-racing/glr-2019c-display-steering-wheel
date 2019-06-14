@@ -3,8 +3,8 @@
 
 unsigned int rpmTest = 12500;
 unsigned int pFuel = 99;
-unsigned int pOil = 99;	//double waere hier besser
-//double pOil = 99;
+//unsigned int pOil = 99;	//double waere hier besser
+double pOil = 99.9;
 int tOil = 99;
 int tWat = 99;
 
@@ -35,7 +35,7 @@ void Screen1View::setRpm(int newRpm)
     Unicode::snprintf(textAreaFuelBuffer, TEXTAREAFUEL_SIZE, "%d", pFuel);
 	textArea1.invalidate();
 	shiftLight(rpmTest);
-	Unicode::snprintf(textAreaPOilBuffer, TEXTAREAPOIL_SIZE, "%d", pOil);
+	Unicode::snprintfFloat(textAreaPOilBuffer, TEXTAREAPOIL_SIZE, "%.1f", pOil);
 	textAreaPOil.invalidate();
 	Unicode::snprintf(textAreaTOilBuffer, TEXTAREATOIL_SIZE, "%d", tOil);
 	textAreaTOil.invalidate();

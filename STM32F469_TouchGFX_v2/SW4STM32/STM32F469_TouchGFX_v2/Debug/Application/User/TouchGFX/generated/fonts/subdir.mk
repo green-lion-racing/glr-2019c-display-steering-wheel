@@ -6,15 +6,15 @@
 CPP_SRCS += \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/FontGetters.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_consola_100_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_consola_100_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_consola_100_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp 
@@ -22,15 +22,15 @@ C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_Tou
 OBJS += \
 ./Application/User/TouchGFX/generated/fonts/ApplicationFontProvider.o \
 ./Application/User/TouchGFX/generated/fonts/FontGetters.o \
-./Application/User/TouchGFX/generated/fonts/Font_verdana_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.o \
-./Application/User/TouchGFX/generated/fonts/Kerning_verdana_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.o \
-./Application/User/TouchGFX/generated/fonts/Table_verdana_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_40_4bpp.o 
@@ -38,15 +38,15 @@ OBJS += \
 CPP_DEPS += \
 ./Application/User/TouchGFX/generated/fonts/ApplicationFontProvider.d \
 ./Application/User/TouchGFX/generated/fonts/FontGetters.d \
-./Application/User/TouchGFX/generated/fonts/Font_verdana_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.d \
-./Application/User/TouchGFX/generated/fonts/Kerning_verdana_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.d \
-./Application/User/TouchGFX/generated/fonts/Table_verdana_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_40_4bpp.d 
@@ -69,7 +69,7 @@ Application/User/TouchGFX/generated/fonts/FontGetters.o: C:/Users/Tobias/Documen
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Font_verdana_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_100_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_consola_100_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)
@@ -101,7 +101,7 @@ Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.o: C:/Users/Tobia
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Kerning_verdana_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_100_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_consola_100_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)
@@ -133,7 +133,7 @@ Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.o: C:/Users/To
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Table_verdana_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_100_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_consola_100_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)

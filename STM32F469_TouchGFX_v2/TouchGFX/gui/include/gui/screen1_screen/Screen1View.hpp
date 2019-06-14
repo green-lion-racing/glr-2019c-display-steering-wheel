@@ -21,8 +21,8 @@ protected:
 };
 extern unsigned int rpmTest;
 extern unsigned int pFuel;
-extern unsigned int pOil;
-//extern double pOil;
+//extern unsigned int pOil;
+extern double pOil;
 extern int tOil;
 extern int tWat;
 #endif // SCREEN1_VIEW_HPP

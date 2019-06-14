@@ -11,7 +11,7 @@ using namespace touchgfx;
 extern touchgfx::InternalFlashFont& getFont_verdana_20_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_40_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_10_4bpp();
-extern touchgfx::InternalFlashFont& getFont_verdana_100_4bpp();
+extern touchgfx::InternalFlashFont& getFont_consola_100_4bpp();
 
 touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId fontId)
 {
@@ -24,7 +24,7 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId fontId)
     case Typography::SMALL:
         return &(getFont_verdana_10_4bpp());
     case Typography::TYPOGRAPHY_00:
-        return &(getFont_verdana_100_4bpp());
+        return &(getFont_consola_100_4bpp());
     default:
         return 0;
     }

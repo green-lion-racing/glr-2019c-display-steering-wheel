@@ -30,7 +30,7 @@ Screen1ViewBase::Screen1ViewBase()
     textAreaGear.setWildcard(textAreaGearBuffer);
     textAreaGear.setTypedText(TypedText(T_SINGLEUSEID7));
 
-    image1.setXY(519, 200);
+    image1.setXY(513, 140);
     image1.setBitmap(Bitmap(BITMAP_SCREWDRIVER_ICON_ICONS_COM_65041_ID));
 
     textAreaFuel.setPosition(649, 18, 128, 146);
@@ -71,15 +71,15 @@ Screen1ViewBase::Screen1ViewBase()
     rpm5.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     rpm5.setBorderSize(6);
 
-    textAreaPOil.setPosition(676, 315, 101, 146);
+    textAreaPOil.setPosition(680, 202, 101, 250);
     textAreaPOil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textAreaPOil.setLinespacing(0);
     textAreaPOil.setRotation(TEXT_ROTATE_270);
-    Unicode::snprintf(textAreaPOilBuffer, TEXTAREAPOIL_SIZE, "%s", TypedText(T_SINGLEUSEID12).getText());
+    Unicode::snprintf(textAreaPOilBuffer, TEXTAREAPOIL_SIZE, "%s", TypedText(T_SINGLEUSEID20).getText());
     textAreaPOil.setWildcard(textAreaPOilBuffer);
     textAreaPOil.setTypedText(TypedText(T_SINGLEUSEID11));
 
-    textAreaTOil.setPosition(543, 315, 104, 146);
+    textAreaTOil.setPosition(545, 315, 104, 146);
     textAreaTOil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textAreaTOil.setLinespacing(0);
     textAreaTOil.setRotation(TEXT_ROTATE_270);

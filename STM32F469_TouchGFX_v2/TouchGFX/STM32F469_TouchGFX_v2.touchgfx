@@ -101,8 +101,8 @@
             "RelativeFilename": "screwdriver_icon-icons.com_65041.png",
             "Alpha": 255,
             "Name": "image1",
-            "X": 519,
-            "Y": 200,
+            "X": 513,
+            "Y": 140,
             "Width": 48,
             "Height": 48,
             "Type": "Image",
@@ -302,15 +302,15 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId12",
+              "TextId": "SingleUseId20",
               "UseBuffer": true,
               "BufferSize": 20
             },
             "Name": "textAreaPOil",
-            "X": 676,
-            "Y": 315,
+            "X": 680,
+            "Y": 202,
             "Width": 101,
-            "Height": 146,
+            "Height": 250,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -335,7 +335,7 @@
               "BufferSize": 20
             },
             "Name": "textAreaTOil",
-            "X": 543,
+            "X": 545,
             "Y": 315,
             "Width": 104,
             "Height": 146,
@@ -508,10 +508,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId12",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId13",
         "IsResource": false
       },
@@ -537,6 +533,10 @@
       },
       {
         "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
         "IsResource": false
       }
     ],

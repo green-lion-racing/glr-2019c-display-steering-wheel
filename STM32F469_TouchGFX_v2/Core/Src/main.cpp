@@ -150,7 +150,7 @@ int main(void)
   MX_SAI1_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-
+  JDO_CanInit();
   /* USER CODE END 2 */
 
 /* Initialise the graphical hardware */
@@ -636,7 +636,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 			pOil = RxData[5]*13.107/255;
 		break;
 		case 4:
-			//tOil = RxData[5]-40;
+			tOil = RxData[5]-40;
 		break;
 		case 5:
 			tWat = RxData[4]-40;
@@ -653,8 +653,13 @@ void gearUp(void)
 	TxHeader.IDE=CAN_ID_STD;
 	TxHeader.DLC=1;
 	TxHeader.TransmitGlobalTime=DISABLE;
-	TxData[0]=1<<GearUp;
+	TxData[0]=1<<GearUp | 1<<GreenLight;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	osDelay(20);
+	while (!HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin))
+		osDelay(5);
+	TxData[0]=0;
+	//HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 }
 
 void gearDown(void)
@@ -665,8 +670,13 @@ void gearDown(void)
 	TxHeader.IDE=CAN_ID_STD;
 	TxHeader.DLC=1;
 	TxHeader.TransmitGlobalTime=DISABLE;
-	TxData[0]=1<<GearDown;
+	TxData[0]=1<<GearDown | 1<<GreenLight;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	osDelay(20);
+	while (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
+			osDelay(5);
+	TxData[0]=0;
+	//HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 }
 
 void greenLight(void)
@@ -745,20 +755,14 @@ void StartTaskShifting(void const * argument)
 {
   /* USER CODE BEGIN StartTaskShifting */
   /* Infinite loop */
-	//tOil = HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin);
-	//tOil = HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin);
-	for(;;)
-	{
-		osDelay(500);
-		if (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
-			gearDown();
-		else
-			greenLight();
-
-		if (HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin))
-			gearUp();
-		else
-			greenLight();
+  for(;;)
+  {
+	  osDelay(1);
+	  if (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
+		  gearDown();
+	  if (!HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin)){
+		  gearUp();
+	  }
   }
   /* USER CODE END StartTaskShifting */
 }
