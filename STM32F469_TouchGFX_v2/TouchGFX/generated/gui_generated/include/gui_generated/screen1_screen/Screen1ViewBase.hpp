@@ -9,9 +9,8 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -33,7 +32,6 @@ protected:
     touchgfx::Box box2;
     touchgfx::TextAreaWithOneWildcard textArea1;
     touchgfx::TextAreaWithOneWildcard textAreaGear;
-    touchgfx::Image image1;
     touchgfx::TextAreaWithOneWildcard textAreaFuel;
     touchgfx::BoxWithBorder rpm0;
     touchgfx::BoxWithBorder rpm1;
@@ -44,9 +42,10 @@ protected:
     touchgfx::TextAreaWithOneWildcard textAreaPOil;
     touchgfx::TextAreaWithOneWildcard textAreaTOil;
     touchgfx::TextAreaWithOneWildcard textAreaTWat;
-    touchgfx::TextArea textArea2;
-    touchgfx::TextArea textArea2_1;
-    touchgfx::TextArea textArea2_2;
+    touchgfx::Image icon_tWat;
+    touchgfx::Image icon_tOil;
+    touchgfx::Image icon_pOil;
+    touchgfx::Image image;
 
     /*
      * Wildcard Buffers

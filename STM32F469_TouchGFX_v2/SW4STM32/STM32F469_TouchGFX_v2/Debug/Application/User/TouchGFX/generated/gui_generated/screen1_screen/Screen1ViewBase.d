@@ -49,8 +49,8 @@ Application/User/TouchGFX/generated/gui_generated/screen1_screen/Screen1ViewBase
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/FontManager.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp \
- C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Color.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/images/include/BitmapDatabase.hpp
@@ -153,9 +153,9 @@ C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_Tou
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
+
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Color.hpp:
 

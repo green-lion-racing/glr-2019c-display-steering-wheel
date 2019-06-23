@@ -618,7 +618,7 @@ void HAL_CAN_TxMailbox0CompleteCallback(CAN_HandleTypeDef *hcan)
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
 	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {}
-	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	//HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 	//HAL_GPIO_TogglePin(LED_Green_GPIO_Port, LED_Green_Pin);
 	//HAL_Delay(500);
 	//if(RxHeader.StdId == 0x773) {
@@ -659,7 +659,7 @@ void gearUp(void)
 	while (!HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin))
 		osDelay(5);
 	TxData[0]=0;
-	//HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 }
 
 void gearDown(void)
@@ -676,7 +676,7 @@ void gearDown(void)
 	while (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
 			osDelay(5);
 	TxData[0]=0;
-	//HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 }
 
 void greenLight(void)

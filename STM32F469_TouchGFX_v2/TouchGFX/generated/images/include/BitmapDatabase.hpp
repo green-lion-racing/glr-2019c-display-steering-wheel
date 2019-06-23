@@ -6,7 +6,10 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
-const uint16_t BITMAP_SCREWDRIVER_ICON_ICONS_COM_65041_ID = 0; // Size: 48x48 pixels
+const uint16_t BITMAP_ICON_PFUEL_ID = 0; // Size: 76x151 pixels
+const uint16_t BITMAP_ICON_POIL_ID = 1; // Size: 76x151 pixels
+const uint16_t BITMAP_ICON_TOIL_ID = 2; // Size: 76x151 pixels
+const uint16_t BITMAP_ICON_TWAT_ID = 3; // Size: 76x151 pixels
 
 namespace BitmapDatabase
 {
