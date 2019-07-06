@@ -132,6 +132,8 @@ void Error_Handler(void);
 #define USB_FS1_P_GPIO_Port GPIOA
 #define FMC_NBL2_Pin GPIO_PIN_4
 #define FMC_NBL2_GPIO_Port GPIOI
+#define clutchGND_Pin GPIO_PIN_12
+#define clutchGND_GPIO_Port GPIOG
 #define LED3_Pin GPIO_PIN_5
 #define LED3_GPIO_Port GPIOD
 #define D3_Pin GPIO_PIN_1
@@ -242,6 +244,8 @@ void Error_Handler(void);
 #define LCD_INT_GPIO_Port GPIOJ
 #define D20_Pin GPIO_PIN_12
 #define D20_GPIO_Port GPIOH
+#define clutch_Pin GPIO_PIN_1
+#define clutch_GPIO_Port GPIOA
 #define WAKEUP_Pin GPIO_PIN_0
 #define WAKEUP_GPIO_Port GPIOA
 #define A7_Pin GPIO_PIN_13
@@ -289,6 +293,7 @@ void Error_Handler(void);
 #define STLK_TX_Pin GPIO_PIN_11
 #define STLK_TX_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
+#define CLUTCH 0
 #define GearUp 1
 #define GearDown 2
 #define GreenLight 7

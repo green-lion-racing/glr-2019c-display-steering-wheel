@@ -105,6 +105,7 @@ void JDO_CanInit(void);
 void gearUp(void);
 void gearDown(void);
 void greenLight(void);
+void clutch(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -440,13 +441,13 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOE, SPKR_HP_Pin|AUDIO_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOG, clutchGND_Pin|paddleShiftGND_Pin|LED1_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, LED3_Pin|LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOG, paddleShiftGND_Pin|LED1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, OTG_FS1_PowerSwitchOn_Pin|EXT_RESET_Pin, GPIO_PIN_RESET);
@@ -508,6 +509,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : clutchGND_Pin paddleShiftGND_Pin */
+  GPIO_InitStruct.Pin = clutchGND_Pin|paddleShiftGND_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+
   /*Configure GPIO pins : LED3_Pin LED2_Pin */
   GPIO_InitStruct.Pin = LED3_Pin|LED2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
@@ -521,13 +529,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED4_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : paddleShiftGND_Pin */
-  GPIO_InitStruct.Pin = paddleShiftGND_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(paddleShiftGND_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : uSD_CMD_Pin */
   GPIO_InitStruct.Pin = uSD_CMD_Pin;
@@ -585,6 +586,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(LCD_INT_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : clutch_Pin */
+  GPIO_InitStruct.Pin = clutch_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(clutch_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pin : PH7 */
   GPIO_InitStruct.Pin = GPIO_PIN_7;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -629,6 +636,12 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 	case 0x773:
 		rpmTest = (RxData[3]<<8|RxData[4])*32767.5/65535;
 	break;
+	case 0x775:
+		speed = (RxData[0]<<8|RxData[1])*512/65536;
+	break;
+	case 0x777:
+		gear = RxData[0];
+	break;
 	case 0x77A:
 		switch(RxData[0]){
 		case 1:
@@ -653,7 +666,7 @@ void gearUp(void)
 	TxHeader.IDE=CAN_ID_STD;
 	TxHeader.DLC=1;
 	TxHeader.TransmitGlobalTime=DISABLE;
-	TxData[0]=1<<GearUp | 1<<GreenLight;
+	TxData[0]=1<<GearUp | 1<<GreenLight | clutchPressed<<CLUTCH;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 	osDelay(20);
 	while (!HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin))
@@ -670,12 +683,11 @@ void gearDown(void)
 	TxHeader.IDE=CAN_ID_STD;
 	TxHeader.DLC=1;
 	TxHeader.TransmitGlobalTime=DISABLE;
-	TxData[0]=1<<GearDown | 1<<GreenLight;
+	TxData[0]=1<<GearDown | 1<<GreenLight | clutchPressed<<CLUTCH;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 	osDelay(20);
 	while (!HAL_GPIO_ReadPin(paddleShiftDown_GPIO_Port, paddleShiftDown_Pin))
 			osDelay(5);
-	TxData[0]=0;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
 }
 
@@ -689,6 +701,24 @@ void greenLight(void)
 	TxHeader.TransmitGlobalTime=DISABLE;
 	TxData[0]=1<<GreenLight;
 	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+}
+
+void clutch(void) {
+	TxHeader.StdId=0x101;
+	//TxHeader.ExtId=0x101;
+	TxHeader.RTR=CAN_RTR_DATA;
+	TxHeader.IDE=CAN_ID_STD;
+	TxHeader.DLC=1;
+	TxHeader.TransmitGlobalTime=DISABLE;
+	if (!clutchPressed)
+		TxData[0]=1<<CLUTCH;
+	else
+		TxData[0]=0<<CLUTCH;
+	HAL_CAN_AddTxMessage(&hcan1,&TxHeader,TxData,&TxMailbox);
+	clutchPressed = !clutchPressed;
+	osDelay(20);
+	while (!HAL_GPIO_ReadPin(clutch_GPIO_Port, clutch_Pin))
+		osDelay(5);
 }
 
 
@@ -763,6 +793,8 @@ void StartTaskShifting(void const * argument)
 	  if (!HAL_GPIO_ReadPin(paddleShiftUp_GPIO_Port, paddleShiftUp_Pin)){
 		  gearUp();
 	  }
+	  if (!HAL_GPIO_ReadPin(clutch_GPIO_Port, clutch_Pin))
+		  clutch();
   }
   /* USER CODE END StartTaskShifting */
 }

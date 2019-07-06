@@ -12,6 +12,7 @@ struct Typography
     static const touchgfx::FontId LARGE = 1;
     static const touchgfx::FontId SMALL = 2;
     static const touchgfx::FontId TYPOGRAPHY_00 = 3;
+    static const touchgfx::FontId TYPOGRAPHY_01 = 4;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

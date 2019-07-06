@@ -1,4 +1,9 @@
 Converting images
+Compiling gui/src/screen1_screen/Screen1Presenter.cpp
+Compiling gui/src/screen1_screen/Screen1View.cpp
+Compiling generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp
+Compiling generated/gui_generated/src/common/FrontendApplicationBase.cpp
+Compiling simulator/main.cpp
 Linking build/bin/simulator.exe
 c:/touchgfx/4.10.0/env/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -ltouchgfx
 c:/touchgfx/4.10.0/env/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lSDL2

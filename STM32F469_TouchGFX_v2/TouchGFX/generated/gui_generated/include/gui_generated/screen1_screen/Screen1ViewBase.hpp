@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -29,39 +30,54 @@ protected:
      * Member Declarations
      */
     touchgfx::Box box1;
-    touchgfx::Box box2;
     touchgfx::TextAreaWithOneWildcard textArea1;
-    touchgfx::TextAreaWithOneWildcard textAreaGear;
-    touchgfx::TextAreaWithOneWildcard textAreaFuel;
     touchgfx::BoxWithBorder rpm0;
     touchgfx::BoxWithBorder rpm1;
     touchgfx::BoxWithBorder rpm2;
     touchgfx::BoxWithBorder rpm3;
     touchgfx::BoxWithBorder rpm4;
     touchgfx::BoxWithBorder rpm5;
-    touchgfx::TextAreaWithOneWildcard textAreaPOil;
-    touchgfx::TextAreaWithOneWildcard textAreaTOil;
-    touchgfx::TextAreaWithOneWildcard textAreaTWat;
+    touchgfx::TextAreaWithOneWildcard textAreaSpeed;
+    touchgfx::Box box2;
+    touchgfx::Box bg_tWat;
     touchgfx::Image icon_tWat;
+    touchgfx::TextAreaWithOneWildcard textAreaTWat;
+    touchgfx::Box bg_tOil;
     touchgfx::Image icon_tOil;
+    touchgfx::TextAreaWithOneWildcard textAreaTOil;
+    touchgfx::Box bg_pOil;
     touchgfx::Image icon_pOil;
-    touchgfx::Image image;
+    touchgfx::TextAreaWithOneWildcard textAreaPOil;
+    touchgfx::Box bg_pFuel;
+    touchgfx::TextAreaWithOneWildcard textAreaPFuel;
+    touchgfx::Image icon_pFuel;
+    touchgfx::TextArea textArea2;
+    touchgfx::TextArea textArea3;
+    touchgfx::TextArea textArea2_1;
+    touchgfx::TextArea textArea2_1_1;
+    touchgfx::TextArea textArea2_1_1_1;
+    touchgfx::TextArea textArea2_1_1_1_1;
+    touchgfx::Box bg_gear;
+    touchgfx::TextArea textArea2_2;
+    touchgfx::TextAreaWithOneWildcard textAreaGear;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t TEXTAREA1_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
-    static const uint16_t TEXTAREAGEAR_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textAreaGearBuffer[TEXTAREAGEAR_SIZE];
-    static const uint16_t TEXTAREAFUEL_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textAreaFuelBuffer[TEXTAREAFUEL_SIZE];
-    static const uint16_t TEXTAREAPOIL_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textAreaPOilBuffer[TEXTAREAPOIL_SIZE];
-    static const uint16_t TEXTAREATOIL_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textAreaTOilBuffer[TEXTAREATOIL_SIZE];
+    static const uint16_t TEXTAREASPEED_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaSpeedBuffer[TEXTAREASPEED_SIZE];
     static const uint16_t TEXTAREATWAT_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textAreaTWatBuffer[TEXTAREATWAT_SIZE];
+    static const uint16_t TEXTAREATOIL_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaTOilBuffer[TEXTAREATOIL_SIZE];
+    static const uint16_t TEXTAREAPOIL_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaPOilBuffer[TEXTAREAPOIL_SIZE];
+    static const uint16_t TEXTAREAPFUEL_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaPFuelBuffer[TEXTAREAPFUEL_SIZE];
+    static const uint16_t TEXTAREAGEAR_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textAreaGearBuffer[TEXTAREAGEAR_SIZE];
 
 private:
 

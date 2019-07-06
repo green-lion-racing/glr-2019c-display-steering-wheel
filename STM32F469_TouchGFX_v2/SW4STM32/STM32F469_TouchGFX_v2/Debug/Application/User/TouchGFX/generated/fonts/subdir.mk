@@ -7,48 +7,57 @@ CPP_SRCS += \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/FontGetters.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_consola_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_consola_150_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_25_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_consola_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_consola_150_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_25_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_consola_100_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_consola_150_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp \
-C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp \
+C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_25_4bpp.cpp \
 C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp 
 
 OBJS += \
 ./Application/User/TouchGFX/generated/fonts/ApplicationFontProvider.o \
 ./Application/User/TouchGFX/generated/fonts/FontGetters.o \
 ./Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Font_consola_150_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.o \
-./Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Font_verdana_25_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Kerning_consola_150_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.o \
-./Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Kerning_verdana_25_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Table_consola_150_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.o \
-./Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.o \
+./Application/User/TouchGFX/generated/fonts/Table_verdana_25_4bpp.o \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_40_4bpp.o 
 
 CPP_DEPS += \
 ./Application/User/TouchGFX/generated/fonts/ApplicationFontProvider.d \
 ./Application/User/TouchGFX/generated/fonts/FontGetters.d \
 ./Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Font_consola_150_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.d \
-./Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Font_verdana_25_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Kerning_consola_150_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.d \
-./Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Kerning_verdana_25_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Table_consola_150_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.d \
-./Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.d \
+./Application/User/TouchGFX/generated/fonts/Table_verdana_25_4bpp.d \
 ./Application/User/TouchGFX/generated/fonts/Table_verdana_40_4bpp.d 
 
 
@@ -77,6 +86,14 @@ Application/User/TouchGFX/generated/fonts/Font_consola_100_4bpp.o: C:/Users/Tobi
 	@echo 'Finished building: $<'
 	@echo ' '
 
+Application/User/TouchGFX/generated/fonts/Font_consola_150_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_consola_150_4bpp.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU G++ Compiler'
+	@echo $(PWD)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F469xx '-DUSE_BPP=16' -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Core/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/target" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/texts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/images/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/gui_generated/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/gui/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/exc7200" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/stmpe811" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ts3510" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/otm8009a" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ampire480272" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/Common" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
 Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
@@ -85,7 +102,7 @@ Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.o: C:/Users/Tobia
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Font_verdana_25_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Font_verdana_25_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)
@@ -109,6 +126,14 @@ Application/User/TouchGFX/generated/fonts/Kerning_consola_100_4bpp.o: C:/Users/T
 	@echo 'Finished building: $<'
 	@echo ' '
 
+Application/User/TouchGFX/generated/fonts/Kerning_consola_150_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_consola_150_4bpp.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU G++ Compiler'
+	@echo $(PWD)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F469xx '-DUSE_BPP=16' -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Core/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/target" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/texts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/images/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/gui_generated/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/gui/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/exc7200" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/stmpe811" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ts3510" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/otm8009a" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ampire480272" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/Common" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
 Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
@@ -117,7 +142,7 @@ Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.o: C:/Users/To
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Kerning_verdana_25_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Kerning_verdana_25_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)
@@ -141,6 +166,14 @@ Application/User/TouchGFX/generated/fonts/Table_consola_100_4bpp.o: C:/Users/Tob
 	@echo 'Finished building: $<'
 	@echo ' '
 
+Application/User/TouchGFX/generated/fonts/Table_consola_150_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_consola_150_4bpp.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU G++ Compiler'
+	@echo $(PWD)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F469xx '-DUSE_BPP=16' -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Core/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/target" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/texts/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/images/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/gui_generated/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/gui/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/ST/TouchGFX/touchgfx/framework/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/exc7200" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/stmpe811" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ts3510" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/otm8009a" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/ampire480272" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/BSP/Components/Common" -I"C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
 Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
@@ -149,7 +182,7 @@ Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.o: C:/Users/Tobi
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp
+Application/User/TouchGFX/generated/fonts/Table_verdana_25_4bpp.o: C:/Users/Tobias/Documents/Git/GLR/glr-2019c-display-steering-wheel/STM32F469_TouchGFX_v2/TouchGFX/generated/fonts/src/Table_verdana_25_4bpp.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)

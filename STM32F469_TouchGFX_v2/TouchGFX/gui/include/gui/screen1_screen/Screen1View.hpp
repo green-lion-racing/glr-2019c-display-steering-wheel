@@ -20,9 +20,12 @@ public:
 protected:
 };
 extern unsigned int rpmTest;
-extern unsigned int pFuel;
-//extern unsigned int pOil;
+extern unsigned int gear;
+extern unsigned int speed;
+extern double pFuel;
 extern double pOil;
 extern int tOil;
 extern int tWat;
+extern bool clutchPressed;
+
 #endif // SCREEN1_VIEW_HPP

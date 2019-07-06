@@ -60,6 +60,10 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
@@ -352,14 +356,19 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_consola_100_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/generated/fonts/Font_consola_150_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_consola_150_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Font_verdana_10_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/TouchGFX/generated/fonts/Font_verdana_20_4bpp.cpp</name>
+			<name>Application/User/TouchGFX/generated/fonts/Font_verdana_25_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_25_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Font_verdana_40_4bpp.cpp</name>
@@ -372,14 +381,19 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_consola_100_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/generated/fonts/Kerning_consola_150_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_consola_150_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Kerning_verdana_10_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/TouchGFX/generated/fonts/Kerning_verdana_20_4bpp.cpp</name>
+			<name>Application/User/TouchGFX/generated/fonts/Kerning_verdana_25_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_25_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Kerning_verdana_40_4bpp.cpp</name>
@@ -392,14 +406,19 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_consola_100_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/generated/fonts/Table_consola_150_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_consola_150_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Table_verdana_10_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/TouchGFX/generated/fonts/Table_verdana_20_4bpp.cpp</name>
+			<name>Application/User/TouchGFX/generated/fonts/Table_verdana_25_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_25_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/TouchGFX/generated/fonts/Table_verdana_40_4bpp.cpp</name>
