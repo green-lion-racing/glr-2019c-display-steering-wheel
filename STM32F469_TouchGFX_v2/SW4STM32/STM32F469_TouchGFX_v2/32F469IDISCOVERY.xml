@@ -13,7 +13,6 @@
   <board id="32f469idiscovery">
     <name>32F469IDISCOVERY</name>
     <dbgIF>SWD</dbgIF>
-    <dbgIF>JTAG</dbgIF>
     <dbgDEV>ST-Link</dbgDEV>
     <mcuId>stm32f469nihx</mcuId>
   </board>

@@ -115,7 +115,6 @@ void HAL_MspInit(void)
 */
 void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan)
 {
-
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(hcan->Instance==CAN1)
   {
@@ -155,10 +154,8 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan)
 * @param hcan: CAN handle pointer
 * @retval None
 */
-
 void HAL_CAN_MspDeInit(CAN_HandleTypeDef* hcan)
 {
-
   if(hcan->Instance==CAN1)
   {
   /* USER CODE BEGIN CAN1_MspDeInit 0 */
@@ -191,7 +188,6 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* hcan)
 */
 void HAL_CRC_MspInit(CRC_HandleTypeDef* hcrc)
 {
-
   if(hcrc->Instance==CRC)
   {
   /* USER CODE BEGIN CRC_MspInit 0 */
@@ -212,10 +208,8 @@ void HAL_CRC_MspInit(CRC_HandleTypeDef* hcrc)
 * @param hcrc: CRC handle pointer
 * @retval None
 */
-
 void HAL_CRC_MspDeInit(CRC_HandleTypeDef* hcrc)
 {
-
   if(hcrc->Instance==CRC)
   {
   /* USER CODE BEGIN CRC_MspDeInit 0 */
@@ -238,7 +232,6 @@ void HAL_CRC_MspDeInit(CRC_HandleTypeDef* hcrc)
 */
 void HAL_QSPI_MspInit(QSPI_HandleTypeDef* hqspi)
 {
-
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(hqspi->Instance==QUADSPI)
   {
@@ -292,10 +285,8 @@ void HAL_QSPI_MspInit(QSPI_HandleTypeDef* hqspi)
 * @param hqspi: QSPI handle pointer
 * @retval None
 */
-
 void HAL_QSPI_MspDeInit(QSPI_HandleTypeDef* hqspi)
 {
-
   if(hqspi->Instance==QUADSPI)
   {
   /* USER CODE BEGIN QUADSPI_MspDeInit 0 */
@@ -332,7 +323,6 @@ void HAL_QSPI_MspDeInit(QSPI_HandleTypeDef* hqspi)
 */
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 {
-
   if(htim_base->Instance==TIM1)
   {
   /* USER CODE BEGIN TIM1_MspInit 0 */
@@ -353,10 +343,8 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 * @param htim_base: TIM_Base handle pointer
 * @retval None
 */
-
 void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* htim_base)
 {
-
   if(htim_base->Instance==TIM1)
   {
   /* USER CODE BEGIN TIM1_MspDeInit 0 */

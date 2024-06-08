@@ -66,7 +66,7 @@ DSI_HandleTypeDef             hdsi;
 SDRAM_HandleTypeDef hsdram1;
 SDRAM_HandleTypeDef hsdram2;
 
-#define REFRESH_COUNT        1653
+#define REFRESH_COUNT        1656
 
 #define SDRAM_TIMEOUT                            ((uint32_t)0xFFFF)
 #define SDRAM_MODEREG_BURST_LENGTH_1             ((uint16_t)0x0000)
@@ -174,7 +174,16 @@ void MX_LCD_Init(void)
 void MX_FMC_Init(void) 
 {  
 /* FMC initialization function */
-  FMC_SDRAM_TimingTypeDef SdramTiming;
+
+  /* USER CODE BEGIN FMC_Init 0 */
+
+  /* USER CODE END FMC_Init 0 */
+
+  FMC_SDRAM_TimingTypeDef SdramTiming = {0};
+
+  /* USER CODE BEGIN FMC_Init 1 */
+
+  /* USER CODE END FMC_Init 1 */
 
   /** Perform the SDRAM1 memory initialization sequence
   */
@@ -232,6 +241,9 @@ void MX_FMC_Init(void)
     Error_Handler( );
   }
 
+  /* USER CODE BEGIN FMC_Init 2 */
+
+  /* USER CODE END FMC_Init 2 */
 }
 /**
   * @brief  Programs the SDRAM device.
@@ -459,7 +471,7 @@ void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* ltdcHandle)
 
 void HAL_DSI_MspInit(DSI_HandleTypeDef* dsiHandle)
 {
-  GPIO_InitTypeDef GPIO_InitStruct;
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(dsiHandle->Instance==DSI)
   {
   /* USER CODE BEGIN DSI_MspInit 0 */
@@ -468,6 +480,7 @@ void HAL_DSI_MspInit(DSI_HandleTypeDef* dsiHandle)
     /* Enable Peripheral clock */
     __HAL_RCC_DSI_CLK_ENABLE();
   
+    __HAL_RCC_GPIOJ_CLK_ENABLE();
     /**DSIHOST GPIO Configuration    
     PJ2     ------> DSIHOST_TE 
     */
@@ -555,7 +568,7 @@ static void HAL_FMC_MspInit(void){
   /* USER CODE BEGIN FMC_MspInit 0 */
 
   /* USER CODE END FMC_MspInit 0 */
-  GPIO_InitTypeDef GPIO_InitStruct;
+  GPIO_InitTypeDef GPIO_InitStruct ={0};
   if (FMC_Initialized) {
     return;
   }
