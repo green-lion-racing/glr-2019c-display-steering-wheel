@@ -1,5 +1,9 @@
 # glr-2019c-display-steering-wheel
 
+> [!NOTE]
+> Habe versucht dieses Projekt für 2024e wiederzuverwenden, aber es gab Kompilierungsfehler...  
+> Daher ist dieses Projekt jetzt archiviert, diente jedoch als Vorlage für [glr-2024c-display-steering-wheel](https://github.com/green-lion-racing/glr-2024c-display-steering-wheel).
+
 Ein Projekt von Tobias Haus, die Display Einheit des Lenkrads, welche im GLR2019c genutzt wird.
 
 Hauptsächlich Darstellung von Daten. 
